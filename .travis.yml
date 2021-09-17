@@ -22,6 +22,8 @@ script:
   - docker tag udagram-frontend:local jacksondieter/udagram-frontend:v1
 
 after_success:
-  - echo "nothing needs to do"
-#   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-#   - docker push YOUR_DOCKER_HUB/simple-node
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push jacksondieter/reverseproxy:v1
+  - docker push jacksondieter/udagram-api-user:v1
+  - docker push jacksondieter/udagram-api-feed:v1
+  - docker push jacksondieter/udagram-frontend:v1
