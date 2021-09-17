@@ -17,6 +17,7 @@ script:
   - docker --version # print the version for logging
   - docker-compose -f docker-compose-build.yaml build --parallel
   - docker tag udagram-api-feed jacksondieter/udagram-api-feed:v1
-# after_success:
+after_success:
+  - echo "nothing needs to do"
 #   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 #   - docker push YOUR_DOCKER_HUB/simple-node
