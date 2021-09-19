@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  POSTGRES_HOST: udagram-db-jack.coqo3m44pbri.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: udagram
+  AWS_BUCKET: udagram-media-jack
+  AWS_REGION: us-east-1
+  AWS_PROFILE: default
+  URL: http://localhost:8100
