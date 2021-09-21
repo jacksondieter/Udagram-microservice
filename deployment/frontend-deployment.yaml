@@ -19,11 +19,11 @@ spec:
           name: frontend
           ports:
             - containerPort: 80
-          resources: {}
-          livenessProbe:
-            httpGet:
-              path: /health
-              port: 8080
-            initialDelaySeconds: 90
-            periodSeconds: 10
+          resources: 
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "1024Mi"
+              cpu: "500m"
       restartPolicy: Always
