@@ -1,0 +1,3 @@
+NAME                 EXTERNAL-IP                                                              PORT(S)          AGE
+publicfrontend       ad9d15bee736743fcab15e003a98776a-242053887.us-east-1.elb.amazonaws.com   80:30945/TCP     100m
+publicreverseproxy   a6a88bbdbf77b4c88b3471796530258c-675366660.us-east-1.elb.amazonaws.com   8080:32156/TCP   100m
